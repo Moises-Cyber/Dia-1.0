@@ -1,0 +1,17 @@
+.bcName{
+    margin: 0;
+    border: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77px;
+    height: 28px;
+}
+
+.letter{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Magra";
+    color: white;
+}
