@@ -1,0 +1,20 @@
+.ButtonName{
+    width: 234px;
+    height: 103px;
+    background: #A50010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: Magra;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.LogoName{
+    font-family: "Magra";
+    font-size: 24px;
+    color: white;
+}
