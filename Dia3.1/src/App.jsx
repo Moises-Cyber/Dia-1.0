@@ -1,17 +1,16 @@
-import './App.css';
-import Header from "./componentes/cabecita"
-import Footer from "./componentes/pezinho"
-import Botaozito from "./componentes/corpitcho"
+import "./App.css";
+import Header from "./componentes/cabecita";
+import Footer from "./componentes/pezinho";
+import Botaozito from "./componentes/corpitcho";
+import { functionsIn } from "lodash";
 
 function App() {
   return (
-    <>
-    <Header />
-    <Footer />
-    <div className="content">
+    <div className="main-wrapper">
+      <Header />
       <Botaozito />
+      <Footer />
     </div>
-    </>
   );
 }
 

@@ -1,20 +1,33 @@
-.ButtonName{
-    width: 234px;
-    height: 103px;
-    background: #A50010;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ButtonName {
+  width: 234px;
+  height: 50px;
+  background: #a50010;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 400px;
+  border-radius: 5px;
 }
-h1{
-    font-family: Magra;
-    font-weight: 600;
-    font-size: 20px;
-    color: #fff;
+.Letter {
+  font-family: Magra;
+  font-size: 20px;
+  color: #fff;
 }
 
-.LogoName{
-    font-family: "Magra";
-    font-size: 24px;
-    color: white;
+button {
+  background-color: #a50010;
+  border: none;
+  cursor: pointer;
+}
+
+.conteudo {
+  background-color: #a50010;
+}
+
+.imagem {
+  display: flex;
+}
+
+.titulo {
+  font-family: "Magra";
 }

@@ -1,15 +1,29 @@
-* {
-    margin: 0;
+.top {
+  height: 64px;
+  width: 100%;
+  background: #a50010;
+  color: white;
+  font-family: "Magra";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
 }
 
-.top{
-    height: 64px;
-    background: #A50010;
-    color: white;
-    font-family: "Magra";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 24px;
+/*.top {
+  color: white;
+  font-family: "Magra";
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  background: #a50010;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
 }
+*/

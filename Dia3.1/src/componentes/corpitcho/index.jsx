@@ -1,14 +1,12 @@
-import "./styles.css"
+import "./styles.css";
+import React from "react";
 
-function Botaozito(){
-    return(
-        <div className="ButtonName">
-            <h1>Mostra/Esconde Card</h1>
-        </div>
-    );
+function Botaozito() {
+  return (
+    <div className="ButtonName">
+      <h1 className="Letter">Mostra/Esconde Card</h1>
+    </div>
+  );
 }
 
 export default Botaozito;
-
-
- 

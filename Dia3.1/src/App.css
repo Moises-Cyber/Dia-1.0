@@ -1,6 +1,4 @@
-.content{
+.main-wrapper {
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 307px;
 }

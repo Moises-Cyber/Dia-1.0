@@ -1,12 +1,13 @@
-import "./styles.css"
+import "./styles.css";
 
-function LogoCard(){
-    return(
-        <div>
-            <h1 className="LogoName">Serra Junior Engenharia</h1>
-            <img scr="../../../logo.png" className="sjLogo" alt="logo" />
-        </div>
-    );
+function MostraEsconde() {
+  const logo1 = require("../assets/logo.png");
+  return (
+    <div className="conteudo">
+      <h1 className="titulo">Serra Junior Engenharia</h1>
+      <img className="imagem" src={logo1} />
+    </div>
+  );
 }
 
-export default LogoCard;
+export default MostraEsconde;
