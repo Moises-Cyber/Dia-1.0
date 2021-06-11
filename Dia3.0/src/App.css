@@ -1,0 +1,14 @@
+.nome{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding-top: 112px;
+    padding-left: 160px;
+}
+
+.caracteristicas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    padding-left: 120px;
+}
