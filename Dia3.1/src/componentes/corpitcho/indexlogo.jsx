@@ -1,11 +1,11 @@
 import "./styles.css";
+import logo from "../assets/logo.png";
 
 function MostraEsconde() {
-  const logo1 = require("../assets/logo.png");
   return (
     <div className="conteudo">
       <h1 className="titulo">Serra Junior Engenharia</h1>
-      <img className="imagem" src={logo1} />
+      <img className="imagem" src={logo} />
     </div>
   );
 }
