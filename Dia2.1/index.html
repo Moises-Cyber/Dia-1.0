@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dia2-1.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Magra&display=swap" rel="stylesheet">
     <title>Dia 2.1</title>
@@ -18,7 +18,7 @@
                 <div class="collum">
                     <div class="number1">
                         <h3>Numero 1</h3>
-                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_o"><br>
+                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_o" onblur="somar()"><br>
                     </div>
                     <div class="number2">
                         <h3>Numero 2</h3>
@@ -35,7 +35,7 @@
                 <div class="collum">
                     <div class="number1">
                         <h3>Numero 1</h3>
-                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_u"><br>
+                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_u" onblur="subtrair()"><br>
                     </div>
                     <div class="number2">
                         <h3>Numero 2</h3>
@@ -54,7 +54,7 @@
                 <div class="collum">
                     <div class="number1">
                         <h3>Numero 1</h3>
-                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_m"><br>
+                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_m" onblur="multiplicar()"><br>
                     </div>
                     <div class="number2">
                         <h3>Numero 2</h3>
@@ -71,7 +71,7 @@
                 <div class="collum">
                     <div class="number1">
                         <h3>Numero 1</h3>
-                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_d"><br>
+                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="num1" id="num1_d" onblur="dividir()"><br>
                     </div>
                     <div class="number2">
                         <h3>Numero 2</h3>
@@ -86,5 +86,5 @@
         </div>
     </section>
 </body>
-<script src="dia2-1.js"></script>
+<script src="script.js"></script>
 </html>
