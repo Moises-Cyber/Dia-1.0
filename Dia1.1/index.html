@@ -4,61 +4,23 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Magra&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
         <title>Botao</title>
-        <style>
-        .card {
-            margin-top: 15%;
-        }
-        .text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-        }
-        .button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-        }
-        body {
-            font: normal 18pt Calibri;
-        }
-        button.botao{
-            font: normal 35pt Calibri;
-            background: #993399;
-            border-radius: 4px;
-            width: 314px;
-            height: 86px;
-            left: 563px;
-            top: 451px;
-            font-weight: 600;
-            color: white;
-        }
-        </style>
     </head>
     <body>
-        <div class="card">
-            <div class="text">
-                <h1>Integrantes totais no squad: <span class="badge"> 0 </span></h1>
+        <section id="main-section">
+            <div class="card">
+                <div class="text">
+                    <h1>Integrantes totais no squad: <span class="badge"> 0 </span></h1>
+                </div>
+                <div>
+                    <button class="botao" type="button">Adicionar</button>
+                </div>                 
             </div>
-            <div>
-                <button class="botao" type="button">Adicionar</button>
-            </div>
-            <script>
-            var contador = document.querySelector('.badge')
-            var but = document.querySelector('.botao')
-            but.addEventListener('click', function(){
-                var numero = parseInt(contador.textContent) + 1
-                contador.textContent = numero
-                if(numero == 4){
-                    window.alert("Chegou no limite de integrantes!")
-                    contador.textContent = 3
-                }        
-            }) 
-                    
-            </script>
-        </div>
+        </section>
+        <script src="script.js"></script>
     </body>
 </html> 
 
