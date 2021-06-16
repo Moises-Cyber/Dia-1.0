@@ -14,13 +14,13 @@ function Botaozito() {
   }
 
   return (
-    <div>
-    {content}
-    <button type="button" onClick={() => ShowHideImage()}>
-      <div className="ButtonName">
-        <h1 className="Letter">Mostra/Esconde Card</h1>
-      </div>
-    </button>
+    <div className="SecaoToda">
+      {content}
+      <button type="button" onClick={() => ShowHideImage()}>
+        <div className="ButtonName">
+          <h1 className="Letter">Mostra/Esconde Card</h1>
+        </div>
+      </button>
     </div>
   );
 }

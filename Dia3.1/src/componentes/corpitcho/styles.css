@@ -1,31 +1,52 @@
-.ButtonName {
+.SecaoToda{
   width: 234px;
   height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+}
+
+.ButtonName {
   background: #a50010;
   display: flex;
   justify-content: center;
-  border-radius: 5px;
 }
+
 .Letter {
   font-family: Magra;
   font-size: 20px;
   color: #fff;
+  justify-content: center;
 }
 
 button {
+  margin-top: 15px; /*gambiarra*/
   background-color: #a50010;
   border: none;
   cursor: pointer;
 }
 
 .conteudo {
+  padding-bottom: 15px; /*gambiarra*/
   background-color: #a50010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagem {
+  width: 42px;
+  height: 40px;
   display: flex;
+  justify-content: center;
 }
 
 .titulo {
   font-family: "Magra";
+  font-size: 12px;
+  color: white;
+  padding-top: 10px; /*gambiarra*/
 }

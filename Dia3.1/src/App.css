@@ -1,9 +1,12 @@
 .main-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  min-height: 100vh;
   }
+
+.botau{
+    display: flex;
+    justify-content: center; 
+}
 
   body{
     margin: 0;
-  }
+}

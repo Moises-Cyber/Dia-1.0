@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="main-wrapper">
       <Header />
-      <Botaozito />
+      <div className="botau">
+        <Botaozito />
+      </div>
       <Footer />
     </div>
   );
