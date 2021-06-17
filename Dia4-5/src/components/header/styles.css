@@ -1,0 +1,14 @@
+.top {
+    height: 64px;
+    width: 100%;
+    background: #00CED1;
+    color: black;
+    font-family: "Magra";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  

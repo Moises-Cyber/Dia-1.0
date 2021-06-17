@@ -1,0 +1,39 @@
+.Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;  
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 40px;
+}
+
+.InputandButton{
+    color: Black;
+}
+
+button{
+    width: 120px;   
+    height: 49px;
+    background-color: #00CED1;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+input{
+    padding-left: 11px;
+    width: 1089px;
+    height: 43px;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+::-webkit-input-placeholder{
+    color:#C6C6C6;
+}
