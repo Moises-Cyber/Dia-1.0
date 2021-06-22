@@ -1,12 +1,10 @@
 import "./styles.css";
-import React,{Component} from "react";
-
+import React, {Component} from "react";
 export default class Receitas extends Component{
 
     state = {
         cardName: "", cardTime: "", cardCategory: "",
-        cardsName: [], cardsTime: [], cardsCategory: [],
-        divCreator();
+        cardsName: [], cardsTime: [], cardsCategory: [] 
     }
 
     constructor(){
@@ -30,24 +28,15 @@ export default class Receitas extends Component{
     }
 
     handleClick(){
-        const {cardName, cardTime, cardCategory, cardsName, cardsTime, cardsCategory} = this.state;
-        this.setState({
-        cardName: "", cardTime: "", cardCategory: "",
-        cardsName: [].concat(cardsName, cardName),
-        cardsTime: [].concat(cardsTime, cardTime),
-        cardsCategory: [].concat(cardsCategory, cardCategory)     
-        });
+      const {cardName, cardTime, cardCategory, cardsName, cardsTime, cardsCategory} = this.state;
+      this.setState({
+      cardName: "", cardTime: "", cardCategory: "",
+      cardsName: [].concat(cardsName, cardName),
+      cardsTime: [].concat(cardsTime, cardTime),
+      cardsCategory: [].concat(cardsCategory, cardCategory)
+      });
     }
 
-    divCreator(){
-        let contentBox = {this.state.divCreator.map(divCreator=><div className="Cards-Box">
-            <ul>
-                {this.state.cardsName.map(cardName => <p key={cardName}><strong>Nome:</strong> {cardName}</p>)}
-                {this.state.cardsTime.map(cardTime => <p key={cardTime}><strong>Tempo de Preparo:</strong> {cardTime}</p>)}
-                {this.state.cardsCategory.map(cardCategory => <p key={cardCategory}><strong>Categoria:</strong> {cardCategory}</p>)}
-            </ul>
-        </div>)}
-    }
 
     render(){
         return(
@@ -57,10 +46,16 @@ export default class Receitas extends Component{
                     <input className="Nome" type="text" placeholder="Nome" value={this.state.cardName} onChange={this.NameChange} />
                     <input className="Tempo"type="text" placeholder="Tempo de Preparo" value={this.state.cardTime} onChange={this.TimeChange} />
                     <input className="Categoria "type="text" placeholder="Categoria" value={this.state.cardCategory} onChange={this.CategoryChange} />
-                    <button type="button" onClick={()=>{this.handleClick;this.divCreator;}}> <h1 className="button-title">Adicionar</h1></button>
+                    <button type="button" onClick={this.handleClick}> <h1 className="button-title">Adicionar</h1></button>
                 </div>
-                <divCreator />
-            </div>
+                <div className="Cards-Box">
+                  <ul>
+                    {this.state.cardsName.map(cardName => <p key={cardName}><strong>Nome:</strong> {cardName}</p>)}
+                    {this.state.cardsTime.map(cardTime => <p key={cardTime}><strong>Tempo de Preparo:</strong> {cardTime}</p>)}
+                    {this.state.cardsCategory.map(cardCategory => <p key={cardCategory}><strong>Categoria:</strong> {cardCategory}</p>)}
+                  </ul>
+                </div>  
+          </div>
         );
     }
 }
@@ -74,11 +69,9 @@ function Botaozito() {
   if (showImage == true){
     content = <MostraEsconde />
   }
-
   function ShowHideImage() {
     setshowImage(!showImage);
   }
-
   return (
     <div className="SecaoToda">
       {content}
@@ -90,7 +83,6 @@ function Botaozito() {
     </div>
   );
 }
-
 export default class TaskList extends Component{
     state = {
     tarefa : "",
@@ -125,9 +117,4 @@ export default class TaskList extends Component{
       tarefas: [].concat(tarefas,tarefa)});
   }
 }
-
-
-
-
-
 */

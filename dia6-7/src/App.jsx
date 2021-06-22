@@ -3,12 +3,11 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Receitas from './components/body';
 
-
 function App() {
   return (
     <div className="App">
       <Header />
-      <Receitas />  
+      <Receitas />    
       <Footer />
     </div>
   );
